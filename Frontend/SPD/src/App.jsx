@@ -1,7 +1,7 @@
 // frontend/src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from './pages/HomePage';
+import HomePage from './Pages/HomePage';
 import ThemeToggle from './Components/themeToggle';
 import { ThemeProvider } from './Context/themeContext';
 import './App.css'; // Import App-wide CSS
