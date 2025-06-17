@@ -1,7 +1,7 @@
 // frontend/src/api/studentApi.js
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:5000/api'; // Ensure this matches your backend port
+const API_BASE_URL = 'https://spd-wscb.vercel.app/'; // Ensure this matches your backend port
 
 const api = axios.create({
     baseURL: API_BASE_URL,
