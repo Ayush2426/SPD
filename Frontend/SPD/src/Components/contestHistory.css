@@ -1,0 +1,217 @@
+/* frontend/src/components/ContestHistory.css */
+.contest-history-container {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.375rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.dark .contest-history-container {
+    background-color: var(--gray-bg-dark);
+}
+
+.contest-history-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #111827;
+    /* gray-900 */
+    margin-bottom: 1rem;
+}
+
+.dark .contest-history-title {
+    color: #f9fafb;
+    /* gray-100 */
+}
+
+.filter-group {
+    margin-bottom: 1rem;
+}
+
+.filter-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+    /* gray-700 */
+    margin-bottom: 0.25rem;
+}
+
+.dark .filter-label {
+    color: #d1d5db;
+    /* gray-300 */
+}
+
+.filter-select {
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    /* gray-300 */
+    border-radius: 0.375rem;
+    background-color: #f9fafb;
+    /* gray-50 */
+    color: #111827;
+    /* gray-900 */
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.dark .filter-select {
+    border-color: #4b5563;
+    /* gray-600 */
+    background-color: #374151;
+    /* gray-700 */
+    color: #f9fafb;
+    /* gray-100 */
+}
+
+.filter-select:focus {
+    outline: none;
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 1px var(--primary-light);
+}
+
+.chart-container {
+    position: relative;
+    height: 16rem;
+    /* h-64 */
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 640px) {
+    .chart-container {
+        height: 20rem;
+        /* sm:h-80 */
+    }
+}
+
+@media (min-width: 768px) {
+    .chart-container {
+        height: 24rem;
+        /* md:h-96 */
+    }
+}
+
+/* Chart.js specific styling via CSS variables (defined in index.css) */
+/* This ensures charts respect theme changes */
+.chartjs-render-monitor {
+    --chart-text-color: var(--text-color);
+    --chart-grid-line-color: var(--grid-line-color);
+    --chart-tooltip-bg-color: var(--tooltip-bg-color);
+    --chart-tooltip-title-color: var(--tooltip-title-color);
+    --chart-tooltip-body-color: var(--tooltip-body-color);
+    --chart-tooltip-border-color: var(--tooltip-border-color);
+}
+
+.contest-list-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #111827;
+    /* gray-900 */
+    margin-bottom: 0.75rem;
+}
+
+.dark .contest-list-title {
+    color: #f9fafb;
+    /* gray-100 */
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    border-radius: 0.375rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.contest-table {
+    min-width: 100%;
+    border-collapse: collapse;
+}
+
+.contest-table thead {
+    background-color: #f9fafb;
+    /* gray-50 */
+}
+
+.dark .contest-table thead {
+    background-color: var(--gray-bg-dark);
+}
+
+.contest-table th {
+    padding: 0.75rem 1.5rem;
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #6b7280;
+    /* gray-500 */
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid #e5e7eb;
+    /* gray-200 */
+}
+
+.dark .contest-table th {
+    color: #d1d5db;
+    /* gray-300 */
+    border-bottom-color: #374151;
+    /* gray-700 */
+}
+
+.contest-table tbody {
+    background-color: white;
+}
+
+.dark .contest-table tbody {
+    background-color: var(--gray-bg-dark);
+}
+
+.contest-table tr {
+    border-bottom: 1px solid #e5e7eb;
+    /* gray-200 */
+}
+
+.dark .contest-table tr {
+    border-bottom-color: #374151;
+    /* gray-700 */
+}
+
+.contest-table tr:hover {
+    background-color: #f9fafb;
+    /* gray-50 */
+    transition: background-color 0.15s ease;
+}
+
+.dark .contest-table tr:hover {
+    background-color: #2d3748;
+    /* gray-700 */
+}
+
+.contest-table td {
+    padding: 1rem 1.5rem;
+    white-space: nowrap;
+    font-size: 0.875rem;
+    color: #374151;
+    /* gray-700 */
+}
+
+.dark .contest-table td {
+    color: #d1d5db;
+    /* gray-300 */
+}
+
+.contest-name-link {
+    color: var(--primary-light);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contest-name-link:hover {
+    text-decoration: underline;
+}
+
+.rating-change-positive {
+    color: #16a34a;
+    /* green-600 */
+}
+
+.rating-change-negative {
+    color: #ef4444;
+    /* red-500 */
+}

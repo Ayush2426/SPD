@@ -1,0 +1,51 @@
+/* frontend/src/App.css */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background-color: var(--primary-light);
+  color: white;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dark .app-header {
+  background-color: var(--primary-dark);
+}
+
+.app-title {
+  font-size: 1.25rem;
+  /* sm:text-2xl */
+  font-weight: bold;
+}
+
+@media (min-width: 640px) {
+  .app-title {
+    font-size: 1.5rem;
+    /* sm:text-2xl */
+  }
+}
+
+.app-main {
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.app-footer {
+  background-color: var(--gray-bg-light);
+  color: var(--text-light);
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.dark .app-footer {
+  background-color: var(--gray-bg-dark);
+  color: var(--text-dark);
+}

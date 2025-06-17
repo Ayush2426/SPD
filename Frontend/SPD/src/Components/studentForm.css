@@ -1,0 +1,177 @@
+/* frontend/src/components/StudentFormModal.css */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(17, 24, 39, 0.5);
+    /* gray-900 with 50% opacity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 50;
+    padding: 1rem;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 0.375rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 32rem;
+    /* max-w-lg */
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(1);
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+.dark .modal-content {
+    background-color: var(--gray-bg-dark);
+}
+
+.modal-header {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #111827;
+    /* gray-900 */
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color-light);
+}
+
+.dark .modal-header {
+    color: #f9fafb;
+    /* gray-100 */
+    border-bottom-color: var(--border-color-dark);
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+    /* gray-700 */
+    margin-bottom: 0.25rem;
+}
+
+.dark .form-label {
+    color: #d1d5db;
+    /* gray-300 */
+}
+
+.form-label .required-star {
+    color: #ef4444;
+    /* red-500 */
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    /* gray-300 */
+    border-radius: 0.375rem;
+    background-color: #f9fafb;
+    /* gray-50 */
+    color: #111827;
+    /* gray-900 */
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.dark .form-input {
+    border-color: #4b5563;
+    /* gray-600 */
+    background-color: #374151;
+    /* gray-700 */
+    color: #f9fafb;
+    /* gray-100 */
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 1px var(--primary-light);
+}
+
+.checkbox-group {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-input {
+    height: 1rem;
+    width: 1rem;
+    color: var(--primary-light);
+    border-radius: 0.125rem;
+    /* rounded-sm */
+}
+
+.checkbox-label {
+    margin-left: 0.5rem;
+    display: block;
+    font-size: 0.875rem;
+    color: #374151;
+    /* gray-700 */
+}
+
+.dark .checkbox-label {
+    color: #d1d5db;
+    /* gray-300 */
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    /* space-x-3 */
+}
+
+.modal-cancel-button {
+    padding: 0.5rem 1rem;
+    background-color: #e5e7eb;
+    /* gray-200 */
+    color: #333;
+    /* gray-800 */
+    border-radius: 0.375rem;
+    transition: background-color 0.15s ease-in-out;
+    font-size: 0.875rem;
+    border: none;
+    cursor: pointer;
+}
+
+.dark .modal-cancel-button {
+    background-color: #4a5568;
+    /* gray-600 */
+    color: #e2e8f0;
+    /* gray-200 */
+}
+
+.modal-cancel-button:hover {
+    background-color: #d1d5db;
+    /* gray-300 */
+}
+
+.dark .modal-cancel-button:hover {
+    background-color: #2d3748;
+    /* gray-700 */
+}
+
+.modal-submit-button {
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-light);
+    color: white;
+    border-radius: 0.375rem;
+    transition: background-color 0.15s ease-in-out;
+    font-size: 0.875rem;
+    border: none;
+    cursor: pointer;
+}
+
+.modal-submit-button:hover {
+    background-color: var(--primary-dark);
+}
